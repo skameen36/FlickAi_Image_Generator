@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import "../../../node_modules/bootstrap/dist/css/bootstrap.css";
+@import "../../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+ body
+ {
+  /*background: rgb(9,9,11);
+  background: linear-gradient(90deg, rgba(9,9,11,1) 29%, rgba(113,24,113,1) 48%, rgba(9,9,11,1) 76%); */
+  background: url("../src/assets/images/bg9.png");
+  background-size:cover;
+  height: 100vh;
+ }

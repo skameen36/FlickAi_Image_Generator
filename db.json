@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "signup": [
+    {
+      
+      "fullname": "ameen shaikh",
+      "email": "ameen36@gmail.com",
+      "password": "8055",
+      "id": 1
+    },
+    {
+      "fullname": "junaid khan",
+      "email": "junaidjk@gmail.com",
+      "password": "2611",
+      "id": 2
+    }
+  ]
+}

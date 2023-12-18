@@ -1,0 +1,337 @@
+/* Importing Google font - Poppins */
+.logo:hover{
+  transform: scale(1.05);
+  transition: 1s ease;
+  box-shadow: 3px 5px 25px 8px rgba(125, 233, 179, 0.445);
+  border-radius: 3%;
+}
+
+.header{
+    width: 100%;
+    height: 10%;
+    backdrop-filter: blur(10px);
+    background: rgb(177, 144, 84)55, 166, 0, 0.623;
+    border-bottom: 1px solid black;
+    box-shadow: 1px 15px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+   }
+   
+   .header div a{
+     text-decoration: none;
+     color: rgb(255, 255, 255);
+   }
+   
+   .image-generator {
+     height: 32vh;
+     display: flex;
+     top: -6px;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+    /* background: url("images/bg2.jpg");  */
+     background-size: cover;
+     background-position: center;
+   
+   }
+   
+   .image-generator .content {
+     position: relative;
+     color: #fff;
+     padding: 0 15px;
+     max-width: 760px;
+     text-align: center;
+     border-radius: 5%;
+     background-color: transparent ;
+   }
+   
+   .image-generator .text {
+     position: absolute;
+     top: 50%; 
+     right: 50%;
+     transform: translate(50%,-50%);
+     text-transform: uppercase;
+     font-family: verdana;
+     font-size: 12em;
+     font-weight: 700;
+     color: #3b494b;
+     text-shadow: 1px 1px 1px #919191,
+         1px 2px 1px #919191,
+         1px 3px 1px #919191,
+         1px 4px 1px #919191,
+         1px 5px 1px #919191,
+         1px 6px 1px #919191,
+         1px 7px 1px #919191,
+         1px 8px 1px #919191,
+         1px 9px 1px #919191,
+         1px 10px 1px #919191,
+     1px 18px 6px rgba(16,16,16,0.4),
+     1px 22px 10px rgba(16,16,16,0.2),
+     1px 25px 35px rgba(16,16,16,0.2),
+     1px 30px 60px rgba(16,16,16,0.4);
+   }
+   
+   
+   .image-generator h1 {
+     font-size: 2.5rem;
+     font-weight: 700;
+   }
+   
+   .image-generator p {
+     margin-top: 10px;
+     font-size: 1.35rem;
+   }
+   
+   .image-generator .generate-form {
+     height: 56px;
+     padding: 6px;
+     display: flex;
+     margin-bottom: 15px;
+   /*  background: rgb(228,71,211);
+     background: linear-gradient(31deg, rgba(228, 71, 212, 0.884) 22%, rgba(39, 192, 219, 0.822) 51%, rgba(208, 180, 22, 0.829) 91%); */
+     background: #333030e8;
+     backdrop-filter: blur(10px);
+     align-items: center;
+     border-radius: 30px;
+     margin-top: 45px;
+     justify-content: space-between;
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+     rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   }
+   
+   ::placeholder
+   {
+     color: rgb(235, 224, 224);
+   }
+   
+   .generate-form .prompt-input {
+     width: 100%;
+     height: 100%;
+     outline: none;
+     padding: 0 17px;
+     border: none;
+     background: none;
+     font-size: 1rem;
+     border-radius: 30px;
+     color: white;
+     
+   }
+   
+   .generate-form .controls {
+     display: flex;
+     height: 100%;
+     gap: 15px;
+   }
+   
+   .generate-form .img-quantity {
+     outline: none;
+     border: none;
+     height: 44px;
+     background: none;
+     font-size: 1rem;
+     color: white;
+     font-weight: bold;
+   }
+   
+   .generate-form .generate-btn {
+     font-size: 1rem;
+     outline: none;
+     border: none;
+     font-weight: 500;
+     color: #fff;
+     cursor: pointer;
+     height: 100%;
+     padding: 0 25px;
+     border-radius: 30px;
+     background: rgb(185, 11, 156);
+     transition: ease;
+   }
+   
+   .generate-form .generate-btn[disabled] {
+     opacity: 0.6;
+     pointer-events: none;
+   }
+   
+   .generate-form button:hover {
+     background: #0a83d4;
+     transition: 1s;
+     transform: scale(1.05);
+   }
+   
+   .image-gallery {
+     display: flex;
+     flex-direction: row;
+     gap: 15px;
+     padding: 0;
+     flex-wrap: wrap;
+     justify-content: center;
+     margin: 60px auto;
+     width: 100vw;
+     height: 450px;
+     
+   }
+   
+   .image-gallery .img-card {
+     display: flex;
+     position: relative;
+     align-items: center;
+     justify-content: center;
+     border-radius: 10px;
+     overflow: hidden;
+     aspect-ratio: 1 / 1;
+     width: 22%;
+     height: 100%;
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+     rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   
+   }
+   
+   .image-gallery .img-card.oneimage {
+     width: 25%; /* Set the width to 100% when there's only one image */
+     height: auto; /* Allow the height to adjust proportionally */
+   }
+   
+   .image-gallery .img-card img {
+     height: 100%;
+     width: 100%;
+     object-fit:cover;
+   }
+   
+   .image-gallery .img-card.loading img {
+     width: 80px;
+     height: 80px;
+   }
+   
+   .image-gallery .img-card img:hover
+   {
+     transform: scale(1.1);
+     cursor: grab;
+     transition: 1s ;
+   }
+   
+   .image-gallery .img-card .download-btn {
+     bottom: 15px;
+     right: 15px;
+     height: 36px;
+     width: 36px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-decoration: none;
+     background: #fff;
+     border-radius: 50%;
+     position: absolute;
+     opacity: 0;
+     pointer-events: none;
+     transition: 0.2s ease;
+   }
+   
+   .image-gallery .img-card .download-btn img {
+     width: 14px;
+     height: 14px;
+   }
+   
+   .image-gallery .img-card:not(.loading):hover .download-btn {
+     opacity: 1;
+     pointer-events: auto;
+   }
+   
+   @media screen and (max-width: 760px) {
+     .image-generator {
+       height: 45vh;
+       padding-top: 30px;
+       align-items: flex-start;
+     }
+   
+     .image-generator h1 {
+       font-size: 1.8rem;
+     }
+   
+     .image-generator p {
+       font-size: 1rem;
+     }
+   
+     .image-generator .generate-form {
+       margin-top: 30px;
+       height: 52px;
+       display: block;
+       width: 510px;
+       height: 50px;
+     }
+   
+     .generate-form .controls {
+       height: 40px;
+       margin-top: 15px;
+       justify-content: end;
+       align-items: center;
+     }
+   
+     .generate-form .generate-btn[disabled] {
+       opacity: 1;
+     }
+
+     .generate-form .generate-btn{
+      position: relative;
+      top: -43%;
+      font-size: .8rem;
+      font-weight: 300;
+      height: 100%;
+      padding: 0 16px;
+    }
+   
+     .generate-form .img-quantity {
+       color: #fff;
+       position: relative;
+       top: -44%;
+     }
+   
+     .generate-form .img-quantity option {
+       color: #000;
+     }
+   
+     .image-gallery {
+       margin-top: 20px;
+     }
+   
+     .image-gallery .img-card:not(.loading) .download-btn {
+       opacity: 1;
+       pointer-events: auto;
+     }
+
+     .image-generator .text {
+      position: absolute;
+      
+      right: 50%;
+      transform: translate(50%,-50%);
+      text-transform: uppercase;
+      font-family: verdana;
+      font-size: 12em;
+      font-weight: 700;
+      color: #f1f9fa;
+      text-shadow: none
+    }
+
+    .generate-form .prompt-input {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top:-0%;
+      right: -5%;
+      outline: none;
+      padding: 0 1px;
+      border: none;
+      background: none;
+      font-size: 1rem;
+      border-radius: 30px;
+      color: white;
+      
+    }
+   }
+   
+   @media screen and (max-width: 500px) {
+     .image-gallery .img-card {
+       width: 100%;
+     }
+   }
